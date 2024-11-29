@@ -1,0 +1,352 @@
+
+
+/*Autor: Robles Diez Maria Teresa
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio Web*/
+
+ 
+html{
+    font-size: 100%; /*Tamaño letra según navegador*/
+    min-height: 100%;
+    position: relative;
+    }
+
+body{
+    font-family: 'Montserrat', 'Poppins', 'Roboto', sans-serif; /* Tipo de letra
+    line-height: 1.6; /* Legibilidad mas anchura */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    }
+
+   /* Encabezamiento*/ 
+header {
+    position: relative;
+    font-size: 2.813rem; /*Tamaño letra relativa*/
+    color:#D0F2D9;
+    background-color: #253C59;
+    text-align: center;  
+    height: auto;
+    width: 100%; 
+    top: 0;  
+    padding: 1px; 
+    }
+
+h2{
+    font-size: 2.813rem;
+    color: #D0F2D9;
+    background-color: #253C59;
+    text-align: center;   
+    height: 5%;
+    width: 100%;
+    margin-top: 5px;
+    }
+    
+    
+main {
+    display: flex;
+    color: #010D00; /*Gris suave*/
+    font-size: 2.188rem;    
+    width: 100%; 
+    height: 75%;
+       
+    }
+/*Pagina pricipal presentacion*/
+.presentacion {
+    text-align: center;
+    display: flex; /* Activa el modo Flexbox */
+    flex-direction:row; /* Coloca los elementos en horizontal*/
+    font-weight: bold; /*Negrita*/
+    font-size: 2.313rem;
+    height: 100%;
+    width: 40%;   
+    }
+    .presentacion img{        
+    width:50%; /* Ancho deseado */
+    height: auto; /* Proporción de la imagen */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 1); /* Sombra a las fotografias*/
+
+    }
+/* Pagina principal Categorias de plantas*/
+.categorias {    
+    display: flex; /* Activa el modo Flexbox */
+    flex-direction: column; /* Coloca los elementos vertical, orizontal*/
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    }
+    .categorias img{
+    width: 40%; /* Ancho deseado */
+    height: auto; /* Proporción de la imagen */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 1); /* Sombra a las fotos*/
+    }
+/* Pagina principal modos de contacto y redes*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 20%;        
+    }
+
+    .contacto img{
+    width: 50%; /* Ancho deseado */
+    height: auto; /* Proporción de la imagen */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 10px 15px rgb(101, 76, 76); /* Sombra*/
+                    
+    }
+/* En contactos configuración*/
+.medios{  
+    display: flex; /* Activa el modo Flexbox */
+    flex-direction: row; /* Coloca los elementos en horizontal o vertical*/
+    text-align: center;
+    justify-content: space-evenly; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */       
+    height: 100%;
+    width: 53%;         
+    }
+    .medios img{
+    width:auto;  /* Ancho deseado */
+    height: 110px; /* Proporción de la imagen */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 10px 15px rgb(101, 76, 76); /* Sombra*/
+    }  
+                
+    .medios iframe{
+    margin: 13%;
+    box-shadow: 0 50px 100px rgb(4, 4, 106); /* Sombra*/
+    }       
+       
+/* Forma a los iconos creando class*/
+.iconos{
+    display: flex;
+    padding: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    } 
+
+/* Class para textos h2*/
+.tex-h2 {
+    margin-top: 10px;
+    text-align: center;
+    }
+    
+/* Se indica a los nav altura etc*/
+nav{         
+    flex-direction: column; /* Coloca los elementos */
+    height: 100%;
+    width: 25%;      
+    text-align: center;
+    margin: 10% auto;
+    
+   /* A los hijos configuraciones especificas*/
+    } 
+     nav ul {
+        list-style-type: none; /* Quita los puntos de la lista */
+        padding: 0; 
+        margin: 10px 0; /* Margen superior e inferior */
+        }
+        
+    nav ul article {
+        margin-bottom: 10px; /* Espaciado entre los elementos */
+        }
+        
+    nav ul a {
+        text-decoration: none; /* Elimina el subrayado de los enlaces */
+        color: #333; /* Estilo para el texto de los enlaces */
+        font-weight: bold; /*negrita*/
+        }
+        
+    nav ul a:hover {
+        color: #E6D12E; /* Cambia el color al pasar ratón*/
+        }
+    
+/* Class para aplicar al formulario*/
+.formulario{    
+    display:flex;
+    flex-direction: column;       
+    height: 100%;
+    width: 40%;       
+    }
+
+    /* Se indica a etiquetas tamaños etc*/
+    form {
+        display: flex;
+        flex-direction: column; /* Organiza los elementos*/
+        gap: 15px; /* Espacio contenido*/
+        max-width: 800px; /* Limita el ancho del formulario */
+        margin: 20px auto; /* Centra el formulario */
+        font-size: 2.375rem; /* Cambia el tamaño de fuente formulario */
+        }
+
+    label {
+        font-size: 2.188rem;      
+        }
+
+    input, select, textarea, button {
+        font-size: 2.188rem; 
+        padding: 10px;
+        width: 100%;
+        }
+
+/* Plantas de interior configuracion con una class*/
+.interior{
+    display: flex; /* Activa el modo Flexbox */
+    flex-direction: row; /* Coloca los elementos*/
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin: 5px;
+    }
+    .img-int{
+        width:300px; /* Ancho deseado */
+        height: 300px; /* Proporción de la imagen */
+        border-radius: 15px; /* Esquinas redondeadas */
+        object-fit: cover; /* Ajusta la imagen si necesita recorte */
+        margin: 5px;   
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 1); /* Sombra*/
+    } 
+
+/* Plantas de exterior configuracion con una class*/
+.exterior{
+    display: flex; /* Activa Flexbox */
+    flex-direction: row; /* Coloca los elementos*/
+    height: 100%;
+    width: auto;
+    align-items: center;
+    margin: 5%;
+    }      
+    
+    .p-exterior{
+        display: flex; /* Activa Flexbox */
+        flex-direction: column; /* Coloca los elementos */
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        align-content: space-between;
+    }      
+        
+    .img-ext{
+        width: 400px; /* Ancho deseado */
+        height: 400px; 
+        border-radius: 15px; /* Esquinas redondeadas */
+        margin: 2%;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 1); /* Sombra*/
+        }    
+/* Sección detalle de una planta configuracion con una class*/
+.detalle {
+    max-width:auto; /* Limita el ancho del contenido */
+    margin: 20px auto; 
+    padding: 10px;
+    }
+    
+    /* Configuracion class para que la letra rodee foto*/  
+    .flota {
+        float: left; /* Imagen flota izquierda */
+        margin: 0% 1% 1% 0%; /* Margen imagen */
+        max-width: 20%; /* Máximo imagen */
+        border-radius: 10px; /* Redondea las esquinas de la imagen */
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 1); /* Sombra*/
+        }
+        
+        aside p {
+        text-align: justify; /* Justifica el texto */   
+        }  
+
+/*Creo botón*/
+.boton {
+    text-decoration: none; 
+    color: black; 
+    padding: 20px; 
+    font-size: 1.563rem; 
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 100px 10px 20px 50px;
+    }
+
+    /* Al pasar el ratón cambia de color con :hover*/
+.boton:hover {
+    background-color: #253C59;
+    }
+
+/* Creo Class para aplicar a Contenido Noticias*/
+.contenido {
+    padding: 0px;
+    box-sizing: border-box;
+    color: #010D00; /*Gris suave*/
+    font-size: 1.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    padding: 2px; 
+}
+
+/*Para en contenido principal class para padre en Noticias*/            
+.grid {
+ display: grid;
+ grid-template-columns: 20% 1fr; /* Nav ocupa 20%, contenido 1fr */
+ grid-template-rows: auto;
+ height: 100%; /* Altura completa */
+ color: #010D00;
+ font-size: 2.5rem; 
+ }  
+           
+/*Class para cada articulo*/
+.noticias {
+    border: 2px solid orange;
+    padding: 10px;
+    text-align: center;
+}
+        
+    article h6 {
+        font-size:1.875rem;
+        margin-bottom: 10px;
+    }
+        
+    .noticias-img {
+        width: 240px;
+        height: 240px;
+        margin-bottom: 10px;
+        border-radius: 15px; /* Esquinas redondeadas */
+    }
+/* Configuración para el pie de página*/
+footer {
+    /*display: flex;*/
+    position: absolute;
+    justify-content: center;
+    text-align: center;      
+    font-size: 1.875rem;
+    color: #D0F2D9;
+    font-weight: bold; /*negrita*/
+    background-color: #253C59;
+    height: 12%;
+    width: 100%;
+    
+
+}   /* Para las a en el pie*/
+    footer a { 
+    text-decoration: none; /* Elimina el subrayado enlaces */
+    color: #D0F2D9; /* Estilo  texto  enlaces */
+    font-weight: bold; /*negrita*/
+    }
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+   

@@ -1,0 +1,159 @@
+<!--
+Autor: Robles Diez Maria Teresa
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio Web
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contacto</title>
+
+    <!--Descripción para posicionamiento-->
+    <meta name="description" content="Encuentra una gran variedad de plantas para tu hogar, oficina o jardín en Verde Hogar.">
+    <meta name="keywords" content="plantas, jardín, macetas, plantas de interior, decoración verde">
+    
+    
+    <!--Cambiar color pestaña navegador-->    
+    <meta name="theme-color" content="#E6A42E">
+    
+    <!--Fichero externo de archivos-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+       <!--Aplico tipo letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Estilo pagina fondo y reacción botones-->
+    <style type="text/css">        
+      
+        button {
+            background-color: #253C59;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #AED9A3;
+        }
+        body{
+            background-color:#CED9A7;
+            background-image: url(/img/FondoPlanta0.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+     <!-- Título -->
+    <header>
+        <h1>Verde Hogar</h1>
+    </header>
+
+    <!--Contenido principal-->
+    <main> 
+
+        <!--Barra navegación-->    
+        <nav>        
+            <ul>
+                <article><li><a href="index.html">Inicio</a></li></article> 
+                <article><li><a href="plantasinterior.html">Plantas Interior</a></li></article> 
+                <article><li> <a href="plantasexterior.html">Plantas Exterior</a></li></article> 
+                <article><li><a href="noticias.html">Noticias</a></li></article> 
+            </ul>
+        </nav>  
+
+        <!--Formulario de contacto-->
+        <section class="formulario"> 
+
+               <article style="padding: 10%;"> 
+                 
+                    <h3 class="tex-h2">Formulario de Contacto</h3>
+                    <form action="index.html" method="get"> <!--Configuración del envío-->
+
+                    <article>  <!-- Campo para el nombre -->                          
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" required> 
+                    </article>
+
+                    <article>      <!-- Campo email -->
+                     <label for="email">Correo Electrónico:</label>
+                        <input type="email" name="email" required> 
+                    </article>                                        
+
+                    <!-- Desplegable para el tema -->              
+                    <article>    
+                        <label for="tema">Tema:</label>
+                        <select name="tema" required>
+                        <option value="">Seleccione un tema</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="queja">Queja</option>              
+                    </article>
+
+                    <article>  <!-- Recuadro mensaje -->             
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" rows="5" cols="30" required></textarea>
+                    </article>
+
+                   <article>     <!-- Botón enviar-->              
+                     <button type="submit">Enviar</button>
+                   </article>                  
+
+                </article>               
+            </form>
+
+        </section>
+       
+       
+        <!-- Contacto redes y mapa de situación-->
+        <section class="medios">
+            
+          <article> 
+                <h3 class="tex-h2">Contacto</h3> 
+                                       
+             <article class="iconos">
+                    <article>
+                        <a href="contacto.html">
+                            <img src="img/email.jpg" alt="Contacto">
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="https://www.facebook.com">
+                            <img src="img/facebook.jpg" alt="Facebook">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/instagram.jpg" alt="Instagram">
+                        </a>
+                    </article>
+                </article>
+                
+                <!--Mapa-->
+                <article>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d83084.04013355658!2d138.51537556278276!3d-34.92578864976999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDU1JzA3LjciUyAxMzjCsDM2JzE3LjUiRQ!5e0!3m2!1ses!2ses!4v1732103481172!5m2!1ses!2ses" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+
+          </article>
+        </section>
+
+    </main>
+    
+    <!--Pie de página-->
+    <footer>    
+        <p>Copyright 2024</p> 
+    </footer>
+
+
+</body>
